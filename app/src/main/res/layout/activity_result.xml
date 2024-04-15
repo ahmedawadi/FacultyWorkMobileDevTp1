@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".View.ResultActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:src="@drawable/image"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Niveau de glycemie est normal"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:id="@+id/result"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comeBackButton"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:layout_marginTop="40dp"
+            android:text="Retour"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:background="@drawable/come_back_button_borders"/>
+    </LinearLayout>
+
+</LinearLayout>

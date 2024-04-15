@@ -1,16 +1,17 @@
-package user;
+package com.example.myapplication.Model;
 
 import androidx.annotation.NonNull;
 
-public class User {
+public class Patient {
     private int age;
     private boolean areYouFast;
     private float glycemieValue;
+    private String result;
 
-    public User(){
-        age = 18;
-        areYouFast = true;
-        glycemieValue = 0;
+    public Patient(int age, float glycemieValue, boolean areYouFast){
+        this.age = age;
+        this.areYouFast = areYouFast;
+        this.glycemieValue = glycemieValue;
     }
 
     public float getGlycemieValue() {
@@ -79,6 +80,8 @@ public class User {
                 result = result.concat("normal");
         }
 
+
+        this.result = result;
 
         return result;
 
